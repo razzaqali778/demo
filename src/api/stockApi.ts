@@ -1,6 +1,6 @@
 import { QueryType } from '../types/types'
 
-const API_KEY = process.env.REACT_APP_STOCK_DATA_KEY ?? 'demo'
+const API_KEY = process.env.REACT_APP_STOCK_DATA_KEY || 'demo'
 
 export const fetchStockData = async (symbol: string, queryType: QueryType) => {
   let url = ''
